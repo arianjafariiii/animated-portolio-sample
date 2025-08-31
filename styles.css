@@ -1,0 +1,62 @@
+:root {
+    --nav-color: #171717;
+    --select-color: #FD853A;
+    --white-color: white;
+    --second-back-color: #f2f4f7;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    width: 90%;
+    background-color: var(--nav-color);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 55px/100%;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    min-height: 60px;
+    font-size: 1.1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 5px;
+    width: 35%;
+  
+  }
+  
+  nav ul li a {
+    padding: 1rem 1.5rem;
+    display: block;
+    cursor: pointer; 
+    
+    border-radius: 55px/100%;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--select-color);
+  
+  }
+  
+  nav div {
+    color: var(--select-color);
+    font-style: bold;
+  }
+  
