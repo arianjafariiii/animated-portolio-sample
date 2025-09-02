@@ -27,7 +27,6 @@
     align-items: center;
     border-radius: 55px/100%;
     padding: 5px;
-    position: absolute;
     top: 20px;
     left: 0;
     right: 0;
@@ -46,6 +45,10 @@
     width: 35%;
   
   }
+ul {
+  list-style: none;
+}
+
   a {
     text-decoration: none;
     color: white;
@@ -123,7 +126,7 @@
     display: inline-block;
   }
 
-  .name-container h2 {
+  .name-container h1 {
     font-size: 2.9rem;
   }
 
@@ -238,12 +241,12 @@
 
 
 #projects {
-  padding: 8rem 1px;
+  padding: 8rem 10px;
   text-align: center;
   background:
    url(./assets/Frame\ 58.svg);
   position: relative; 
- 
+  overflow: hidden;
 
 }
 
@@ -258,9 +261,10 @@
   margin: 0 auto;
   margin-bottom: 6rem;
   
+  
 }
 
-#projects .project-title {
+#projects .project-tile {
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   color: white;
@@ -271,12 +275,12 @@
   text-align: left;
   overflow: hidden;  
 }
-.project-title h3{
+.project-tile h3{
   margin: 1rem 2rem;
   
 }
 
-.project-title img {
+.project-tile img {
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -348,3 +352,118 @@ hr {
   color: white;
 }
 
+#projects h2 {
+  color:var(--white-color)
+}
+
+
+.up-footer {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  border-bottom: 1px solid #475467;
+}
+
+.up-footer p {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.up-footer button {
+  padding: 1rem 2rem;
+  background-color: var(--select-color); 
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.middle-footer {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 2fr;
+  grid-gap: 10px;
+
+}
+
+.middle-footer h4 {
+  color: var(--select-color);
+  font-size: 1.3rem;
+}
+
+.middle-footer div:first-of-type  p{
+  color: white;
+  font-size: 0.7rem;
+}
+
+.navigation, .contact {
+  text-align: center;
+}
+.navigation ul, .contact ul {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+
+.navigation label, .contact label {
+  color: var(--select-color);
+  
+}
+
+.get-email {
+  color: var(--select-color)
+}
+
+.get-email input {
+  padding: 15px;
+  border: none;
+  border-radius: 12px 0 0 12px;
+}
+
+.get-email button {
+  border: none;
+  padding: 0 10px;
+  background-color: var(--select-color);
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+}
+
+#email-input {
+  display: flex;
+  margin-top: 10px
+}
+
+
+@media(max-height: 580px) {
+  .circle {
+    display: none;
+  }
+  .name-container {
+    top: 40%;
+    
+  }
+}
+
+@media(max-width: 1100px) {
+  nav {
+    flex-direction:column;
+    right: 10px;
+    top: 30px;
+    width: 100px;
+    
+    left: auto;
+    text-align: center;
+    border-radius: 12px;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100px;
+  }
+  nav ul li {
+    margin: 0;
+  }
+}
